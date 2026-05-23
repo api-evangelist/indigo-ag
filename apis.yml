@@ -1,0 +1,113 @@
+aid: indigo-ag
+url: https://raw.githubusercontent.com/api-evangelist/indigo-ag/refs/heads/main/apis.yml
+name: Indigo Agriculture
+kind: company
+description: >-
+  Indigo Agriculture is a Boston-based agriculture-technology company combining
+  microbial seed and foliar treatments (biotrinsic) and on-farm seed treatment
+  hardware (CLIPS) with two large supply-chain programs: Carbon by Indigo, a
+  soil-carbon program that pays growers for verified carbon credits using
+  Indigo's proprietary measurement, reporting, and verification (MRV) stack;
+  and Source by Indigo, a Scope-3 program that connects consumer-goods buyers
+  to sustainably grown crops with greenhouse-gas, water, and low-carbon-biofuel
+  outcome reporting. Indigo does not publish a public developer portal; partner
+  and supply-chain integrations are negotiated directly through their team.
+image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+tags:
+  - Agriculture
+  - AgTech
+  - Microbials
+  - Soil Carbon
+  - MRV
+  - Scope 3
+  - Sustainability
+created: '2026-05-23'
+modified: '2026-05-23'
+specificationVersion: '0.19'
+apis:
+  - aid: indigo-ag:carbon-program
+    name: Carbon by Indigo
+    description: >-
+      Soil-carbon program that enrolls growers, captures on-farm management
+      practice data, and uses Indigo's MRV engine to quantify and verify soil
+      organic-carbon outcomes that are sold as carbon credits to corporate
+      buyers. The customer-facing surface is the Indigo grower app at
+      app.indigoag.com; partner / buyer integrations are arranged directly.
+    humanURL: https://www.indigoag.com/carbon
+    baseURL: https://app.indigoag.com/
+    tags:
+      - Carbon Credits
+      - Soil Carbon
+      - MRV
+      - Grower Program
+    properties:
+      - type: Information
+        url: https://www.indigoag.com/carbon
+      - type: GrowerApp
+        url: https://app.indigoag.com/
+      - type: Calculator
+        url: https://carbon.indigoag.net/how-much-can-i-earn-carbon-farming
+  - aid: indigo-ag:source
+    name: Source by Indigo
+    description: >-
+      Scope-3 supply-chain program for consumer goods and biofuel companies.
+      Designs and runs grower programs aligned with the GHG Protocol, collects
+      and verifies field-level data via Indigo's MRV engine, and reports
+      emissions, water, and low-carbon-biofuel outcomes back to the buyer.
+      Delivered as a managed service; integration with buyer systems is
+      arranged on a contract basis.
+    humanURL: https://www.indigoag.com/sustainable-sourcing
+    baseURL: https://www.indigoag.com/sustainable-sourcing
+    tags:
+      - Scope 3
+      - Sustainability
+      - Supply Chain
+      - MRV
+    properties:
+      - type: Information
+        url: https://www.indigoag.com/sustainable-sourcing
+  - aid: indigo-ag:biotrinsic
+    name: biotrinsic Microbial Treatments
+    description: >-
+      Indigo's portfolio of microbial seed and foliar treatments, sold to
+      growers and ag retailers. Product line, not an API; included so the
+      apis.yml reflects Indigo's complete commercial surface.
+    humanURL: https://www.indigoag.com/biotrinsic
+    baseURL: https://www.indigoag.com/biotrinsic
+    tags:
+      - Microbials
+      - Seed Treatments
+      - Product
+    properties:
+      - type: Information
+        url: https://www.indigoag.com/biotrinsic
+  - aid: indigo-ag:clips-device
+    name: CLIPS Seed-Treatment Device
+    description: >-
+      On-farm seed-treatment application hardware used to apply biotrinsic
+      products to seed prior to planting. Hardware product, not an API.
+    humanURL: https://www.indigoag.com/clips
+    baseURL: https://www.indigoag.com/clips
+    tags:
+      - Hardware
+      - Seed Treatment
+      - Product
+    properties:
+      - type: Information
+        url: https://www.indigoag.com/clips
+common:
+  - type: Website
+    url: https://www.indigoag.com/
+  - type: GrowerApp
+    url: https://app.indigoag.com/
+  - type: GitHub
+    url: https://github.com/indigo-ag
+  - type: News
+    url: https://www.indigoag.com/news
+  - type: Blog
+    url: https://www.indigoag.com/blog
+  - type: Contact
+    url: https://www.indigoag.com/contact
+maintainers:
+  - FN: Kin Lane
+    email: kin@apievangelist.com
