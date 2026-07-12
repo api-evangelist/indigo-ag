@@ -96,6 +96,8 @@ apis:
       - type: Information
         url: https://www.indigoag.com/clips
 common:
+  - type: DomainSecurity
+    url: security/indigo-ag-domain-security.yml
   - type: Website
     url: https://www.indigoag.com/
   - type: GrowerApp
