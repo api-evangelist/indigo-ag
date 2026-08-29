@@ -12,6 +12,17 @@ description: >-
   to sustainably grown crops with greenhouse-gas, water, and low-carbon-biofuel
   outcome reporting. Indigo does not publish a public developer portal; partner
   and supply-chain integrations are negotiated directly through their team.
+deliveryModel:
+  model: unknown
+  open_source: false
+  commercial: false
+  callable_host: false
+  label: Delivery model not determined — needs a product licence on record
+  confidence: low
+  source:
+  - none
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: free
   onboarding: unknown
