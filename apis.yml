@@ -119,6 +119,12 @@ apis:
       - type: Information
         url: https://www.indigoag.com/clips
 common:
+  - type: Plans
+    url: plans/indigo-ag-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/indigo-ag-rate-limits.yml
+  - type: FinOps
+    url: finops/indigo-ag-finops.yml
   - type: DomainSecurity
     url: security/indigo-ag-domain-security.yml
   - type: Website
