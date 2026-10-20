@@ -2,16 +2,13 @@ aid: indigo-ag
 url: https://raw.githubusercontent.com/api-evangelist/indigo-ag/refs/heads/main/apis.yml
 name: Indigo Agriculture
 kind: company
-description: >-
-  Indigo Agriculture is a Boston-based agriculture-technology company combining
-  microbial seed and foliar treatments (biotrinsic) and on-farm seed treatment
-  hardware (CLIPS) with two large supply-chain programs: Carbon by Indigo, a
-  soil-carbon program that pays growers for verified carbon credits using
-  Indigo's proprietary measurement, reporting, and verification (MRV) stack;
-  and Source by Indigo, a Scope-3 program that connects consumer-goods buyers
-  to sustainably grown crops with greenhouse-gas, water, and low-carbon-biofuel
-  outcome reporting. Indigo does not publish a public developer portal; partner
-  and supply-chain integrations are negotiated directly through their team.
+description: 'Indigo Agriculture is a Boston-based agriculture-technology company combining microbial
+  seed and foliar treatments (biotrinsic) and on-farm seed treatment hardware (CLIPS) with two large supply-chain
+  programs: Carbon by Indigo, a soil-carbon program that pays growers for verified carbon credits using
+  Indigo''s proprietary measurement, reporting, and verification (MRV) stack; and Source by Indigo, a
+  Scope-3 program that connects consumer-goods buyers to sustainably grown crops with greenhouse-gas,
+  water, and low-carbon-biofuel outcome reporting. Indigo does not publish a public developer portal;
+  partner and supply-chain integrations are negotiated directly through their team.'
 deliveryModel:
   model: unknown
   open_source: false
@@ -37,108 +34,130 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/indigo-ag.png
 tags:
-  - Agriculture
-  - AgTech
-  - Microbials
+- Agriculture
+- AgTech
+- Microbials
+- Soil Carbon
+- MRV
+- Scope 3
+- Sustainability
+created: '2026-05-23'
+modified: '2026-10-20'
+specificationVersion: '0.23'
+maintainers:
+- FN: Kin Lane
+  email: kin@apievangelist.com
+common:
+- type: Hosts
+  url: hosts/indigo-ag-hosts.yml
+- type: Vendors
+  url: vendors/indigo-ag-vendors.yml
+- type: Leadership
+  url: https://www.indigoag.com/about/leadership
+- type: Plans
+  url: plans/indigo-ag-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/indigo-ag-rate-limits.yml
+- type: FinOps
+  url: finops/indigo-ag-finops.yml
+- type: DomainSecurity
+  url: security/indigo-ag-domain-security.yml
+- type: Website
+  url: https://www.indigoag.com/
+- type: GrowerApp
+  url: https://app.indigoag.com/
+- type: GitHub
+  url: https://github.com/indigo-ag
+- type: News
+  url: https://www.indigoag.com/news
+- type: Blog
+  url: https://www.indigoag.com/blog
+- type: Contact
+  url: https://www.indigoag.com/contact
+- type: Login
+  url: https://www.indigoag.com/log-in
+- type: PrivacyPolicy
+  url: https://www.indigoag.com/privacy-policy
+- type: TermsOfService
+  url: https://www.indigoag.com/terms-of-use
+apis:
+- aid: indigo-ag:carbon-program
+  name: Carbon by Indigo
+  description: Soil-carbon program that enrolls growers, captures on-farm management practice data, and
+    uses Indigo's MRV engine to quantify and verify soil organic-carbon outcomes that are sold as carbon
+    credits to corporate buyers. The customer-facing surface is the Indigo grower app at app.indigoag.com;
+    partner / buyer integrations are arranged directly.
+  humanURL: https://www.indigoag.com/carbon
+  baseURL: https://app.indigoag.com/
+  tags:
+  - Carbon Credits
   - Soil Carbon
   - MRV
-  - Scope 3
-  - Sustainability
-created: '2026-05-23'
-modified: '2026-05-23'
-specificationVersion: '0.23'
-apis:
-  - aid: indigo-ag:carbon-program
-    name: Carbon by Indigo
-    description: >-
-      Soil-carbon program that enrolls growers, captures on-farm management
-      practice data, and uses Indigo's MRV engine to quantify and verify soil
-      organic-carbon outcomes that are sold as carbon credits to corporate
-      buyers. The customer-facing surface is the Indigo grower app at
-      app.indigoag.com; partner / buyer integrations are arranged directly.
-    humanURL: https://www.indigoag.com/carbon
-    baseURL: https://app.indigoag.com/
-    tags:
-      - Carbon Credits
-      - Soil Carbon
-      - MRV
-      - Grower Program
-    properties:
-      - type: Information
-        url: https://www.indigoag.com/carbon
-      - type: GrowerApp
-        url: https://app.indigoag.com/
-      - type: Calculator
-        url: https://carbon.indigoag.net/how-much-can-i-earn-carbon-farming
-  - aid: indigo-ag:source
-    name: Source by Indigo
-    description: >-
-      Scope-3 supply-chain program for consumer goods and biofuel companies.
-      Designs and runs grower programs aligned with the GHG Protocol, collects
-      and verifies field-level data via Indigo's MRV engine, and reports
-      emissions, water, and low-carbon-biofuel outcomes back to the buyer.
-      Delivered as a managed service; integration with buyer systems is
-      arranged on a contract basis.
-    humanURL: https://www.indigoag.com/sustainable-sourcing
-    baseURL: https://www.indigoag.com/sustainable-sourcing
-    tags:
-      - Scope 3
-      - Sustainability
-      - Supply Chain
-      - MRV
-    properties:
-      - type: Information
-        url: https://www.indigoag.com/sustainable-sourcing
-  - aid: indigo-ag:biotrinsic
-    name: biotrinsic Microbial Treatments
-    description: >-
-      Indigo's portfolio of microbial seed and foliar treatments, sold to
-      growers and ag retailers. Product line, not an API; included so the
-      apis.yml reflects Indigo's complete commercial surface.
-    humanURL: https://www.indigoag.com/biotrinsic
-    baseURL: https://www.indigoag.com/biotrinsic
-    tags:
-      - Microbials
-      - Seed Treatments
-      - Product
-    properties:
-      - type: Information
-        url: https://www.indigoag.com/biotrinsic
-  - aid: indigo-ag:clips-device
-    name: CLIPS Seed-Treatment Device
-    description: >-
-      On-farm seed-treatment application hardware used to apply biotrinsic
-      products to seed prior to planting. Hardware product, not an API.
-    humanURL: https://www.indigoag.com/clips
-    baseURL: https://www.indigoag.com/clips
-    tags:
-      - Hardware
-      - Seed Treatment
-      - Product
-    properties:
-      - type: Information
-        url: https://www.indigoag.com/clips
-common:
-  - type: Plans
-    url: plans/indigo-ag-plans-pricing.yml
-  - type: RateLimits
-    url: rate-limits/indigo-ag-rate-limits.yml
-  - type: FinOps
-    url: finops/indigo-ag-finops.yml
-  - type: DomainSecurity
-    url: security/indigo-ag-domain-security.yml
-  - type: Website
-    url: https://www.indigoag.com/
+  - Grower Program
+  properties:
+  - type: Information
+    url: https://www.indigoag.com/carbon
   - type: GrowerApp
     url: https://app.indigoag.com/
-  - type: GitHub
-    url: https://github.com/indigo-ag
-  - type: News
-    url: https://www.indigoag.com/news
-  - type: Blog
-    url: https://www.indigoag.com/blog
-  - type: Contact
-    url: https://www.indigoag.com/contact
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+  - type: Calculator
+    url: https://carbon.indigoag.net/how-much-can-i-earn-carbon-farming
+- aid: indigo-ag:source
+  name: Source by Indigo
+  description: Scope-3 supply-chain program for consumer goods and biofuel companies. Designs and runs
+    grower programs aligned with the GHG Protocol, collects and verifies field-level data via Indigo's
+    MRV engine, and reports emissions, water, and low-carbon-biofuel outcomes back to the buyer. Delivered
+    as a managed service; integration with buyer systems is arranged on a contract basis.
+  humanURL: https://www.indigoag.com/sustainable-sourcing
+  baseURL: https://www.indigoag.com/sustainable-sourcing
+  tags:
+  - Scope 3
+  - Sustainability
+  - Supply Chain
+  - MRV
+  properties:
+  - type: Information
+    url: https://www.indigoag.com/sustainable-sourcing
+- aid: indigo-ag:biotrinsic
+  name: biotrinsic Microbial Treatments
+  description: Indigo's portfolio of microbial seed and foliar treatments, sold to growers and ag retailers.
+    Product line, not an API; included so the apis.yml reflects Indigo's complete commercial surface.
+  humanURL: https://www.indigoag.com/biotrinsic
+  baseURL: https://www.indigoag.com/biotrinsic
+  tags:
+  - Microbials
+  - Seed Treatments
+  - Product
+  properties:
+  - type: Information
+    url: https://www.indigoag.com/biotrinsic
+- aid: indigo-ag:clips-device
+  name: CLIPS Seed-Treatment Device
+  description: On-farm seed-treatment application hardware used to apply biotrinsic products to seed prior
+    to planting. Hardware product, not an API.
+  humanURL: https://www.indigoag.com/clips
+  baseURL: https://www.indigoag.com/clips
+  tags:
+  - Hardware
+  - Seed Treatment
+  - Product
+  properties:
+  - type: Information
+    url: https://www.indigoag.com/clips
+x-enrichment:
+  date: '2026-10-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v5
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: indigoag.com links no developer portal or docs host; api.indigoag.com does not resolve, www.indigoag.com/llms.txt
+    is 404, and app.indigoag.com is a grower login app, with partner integrations arranged directly.
+  evidence:
+  - url: https://www.indigoag.com/
+    status: 200
+  - url: https://www.indigoag.com/llms.txt
+    status: 404
+  - url: https://app.indigoag.com/openapi.json
+    status: 307
+  checked: '2026-10-20'
