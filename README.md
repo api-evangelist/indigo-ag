@@ -1,4 +1,4 @@
-# indigo-ag
+# Indigo Agriculture
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,4 +64,107 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Indigo Agriculture — microbial seed treatments + Carbon by Indigo program
+Indigo Agriculture is a Boston-based agriculture-technology company combining microbial seed and foliar treatments (biotrinsic) and on-farm seed treatment hardware (CLIPS) with two large supply-chain programs: Carbon by Indigo, a soil-carbon program that pays growers for verified carbon credits using Indigo's proprietary measurement, reporting, and verification (MRV) stack; and Source by Indigo, a Scope-3 program that connects consumer-goods buyers to sustainably grown crops with greenhouse-gas, water, and low-carbon-biofuel outcome reporting. Indigo does not publish a public developer portal; partner and supply-chain integrations are negotiated directly through their team.
+
+**Areas:** Agriculture · AgTech · Microbials · Soil Carbon · MRV · Scope 3 · Sustainability
+
+## Indigo Agriculture on APIs.io
+
+Everything profiled for Indigo Agriculture is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/indigo-ag/](https://apis.io/providers/indigo-ag/)** — or go straight to one of the APIs or properties below.
+
+### APIs (4)
+
+- [Carbon by Indigo](https://apis.io/apis/indigo-ag/carbon-program/) — Soil-carbon program that enrolls growers, captures on-farm management practice data, and uses Indigo's MRV engine to quantify and verify soil organic-carbon…
+- [Source by Indigo](https://apis.io/apis/indigo-ag/source/) — Scope-3 supply-chain program for consumer goods and biofuel companies. Designs and runs grower programs aligned with the GHG Protocol, collects and verifies…
+- [biotrinsic Microbial Treatments](https://apis.io/apis/indigo-ag/biotrinsic/) — Indigo's portfolio of microbial seed and foliar treatments, sold to growers and ag retailers. Product line, not an API; included so the apis.yml reflects…
+- [CLIPS Seed-Treatment Device](https://apis.io/apis/indigo-ag/clips-device/) — On-farm seed-treatment application hardware used to apply biotrinsic products to seed prior to planting. Hardware product, not an API.
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### Security (1)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Indigo Ag Domain Security](https://apis.io/security/indigo-ag/indigo-ag-domain-security/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Indigo Ag Plans Pricing](https://apis.io/plans/indigo-ag/indigo-ag-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Indigo Ag Rate Limits](https://apis.io/rate-limits/indigo-ag/indigo-ag-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Indigo Ag Finops](https://apis.io/finops/indigo-ag/indigo-ag-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.indigoag.com/)
+- [Blog](https://www.indigoag.com/blog)
+- [Terms of service](https://www.indigoag.com/terms-of-use)
+- [Privacy policy](https://www.indigoag.com/privacy-policy)
+
+## API Evangelist rating
+
+**Kin Score 16.9** — emerging · rubric 0.24.0 · scored 2026-10-20
+
+| Facet | Score |
+|---|---|
+| Discoverability | 74.1 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 10.5 |
+| Developer ergonomics | 2.4 |
+| Access clarity | 39.5 |
+
+**Agent readiness 0.6** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | derived (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 13.7** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/indigo-ag/](https://apis.io/providers/indigo-ag/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Indigo Agriculture: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/indigo-ag/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
